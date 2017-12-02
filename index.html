@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <!--指明当前的浏览器渲染这个页面需要使用的最新渲染引擎-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--标准的移动端web页面视口设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+    <title>news</title>
+    <!--引入bootstrap核心css文件-->
+    <link href="./lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="./css/news.css" rel="stylesheet">
+
+    <!--
+        html5shiv 让我们的Ie9一下支持  html5标签
+        respond  让我们的Ie9一下支持  媒体查询
+        注意：respond.js 需要工作在以http形式打开的页面当中
+    -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--[if lt IE 9]>
+    <script src="./lib/html5shiv/html5shiv.min.js"></script>
+    <script src="./lib/respond/respond.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--顶部-->
+    <div class="container-fluid first">
+        <div class='pull-right'>
+            <ul class="pull-left">
+                <li><a href=""><u>网页</u></a></li>
+                <li>新闻</li>
+                <li><a href="#"><u>贴吧</u></a></li>
+                <li><a href="#"><u>知道</u></a></li>
+                <li><a href="#"><u>音乐</u></a></li>
+                <li><a href="#"><u>图片</u></a></li>
+                <li><a href="#"><u>视频</u></a></li>
+                <li><a href="#"><u>地图</u></a></li>
+                <li><a href="#"><u>文库</u></a></li>
+            </ul>
+            <div class='border pull-left'></div>
+            <ul class="pull-left">
+                <li><a href="#"><u>百度首页</u></a></li>
+                <li><a href="#"><u>登录</u></a></li>
+                <li><a href="#"><u>注册</u></a></li>
+                <li><a href="#"><u>百度新闻客户端</u></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--搜索栏-->
+    <div class='container find'>
+        <a href="#" class='pull-left image'><img src="./images/1.png" alt=""/></a>
+
+        <div class='pull-left second'>
+            <input type="text" class='pull-left space'/>
+            <div class='pull-left button'><span>百度一下</span></div>
+            <div class='other'>
+                <p class='pull-left'><input type="radio" name='tn' checked/>新闻全文</p>
+                <p class='pull-left'><input type="radio" name='tn'/>新闻标题</p>
+            </div>
+        </div>
+
+        <ul class='pull-left third'>
+            <li class='pull-left'><a href="#"><u>帮助</u></a></li>
+            <li class='pull-left'><a href="#"><u>高级搜索</u></a></li>
+            <li class='pull-left'><a href="#"><u>设置</u></a></li>
+        </ul>
+    </div>
+
+    <!--导航条-->
+    <div class='container-fluid baidu_nav' data-offset-top="142" data-spy="affix">
+        <div class='container nav-first'>
+            <p><span class='glyphicon glyphicon-home small_icon'></span>首页</p>
+            <p>百家号</p>
+            <p>国内</p>
+            <p>国际</p>
+            <p>军事</p>
+            <p>社会</p>
+            <p>财经</p>
+            <p>娱乐</p>
+            <p>体育</p>
+            <p>互联网</p>
+            <p>科技</p>
+            <p>游戏</p>
+            <p>时尚</p>
+            <p>女人</p>
+            <p>汽车</p>
+            <p>房产</p>
+            <p>个性推荐</p>
+        </div>
+    </div>
+
+    <!--main contents-->
+    <div class='container main_contents'>
+        <div class='pull-left'>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">热点要闻</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">个性推荐</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <ul class='new_left'>
+                        <li><a href="#"><b>习近平同普京向深圳北理莫斯科大学致贺辞</b></a></li>
+                        <li><a href="#">金砖新十年 风起再扬帆  喜迎十九大</a></li>
+                        <li><a href="#">习近平同文莱苏丹会谈  接受新驻华大使国书  贺词</a></li>
+                        <li><a href="#">李克强听取汇报  张德江  俞正声  刘云山将出访</a></li>
+                        <li><a href="#">中国气象台发布双台风最新动态:都不会登陆中国</a></li>
+                        <li><a href="#">美国务院:特朗普期待访华 将尽快公布行程安排</a></li>
+                        <li><a href="#"><b>乐天确定将出售在华超市业务 此前大玩“障眼法”</b></a></li>
+                        <li><a href="#">中国首次！武汉中院认可并执行美国法庭判决</a></li>
+                        <li><a href="#">国外专家连发四文预警：股市泡沫即将破裂</a></li>
+                        <li><a href="#">巴黎和洛杉矶正式成为2024和2028夏奥会主办国</a></li>
+                        <li><a href="#">国家海洋预报台:海洋灾害应急响应级别已升为Ⅰ级</a></li>
+                        <li><a href="#">呼伦湖舰入列，补齐中国航母战斗群最后一块短板</a></li>
+                        <li><a href="#"><b>无人机到底是不是物流业的爆点？</b></a></li>
+                        <li><a href="#">黑龙江鸡东裕晨煤矿发生瓦斯爆炸 9名矿工遇难</a></li>
+                        <li><a href="#">再见 银行卡！农行宣布 取款方式巨变！</a></li>
+                        <li><a href="#">“盼盼”原型传奇大熊猫巴斯去世，享年37岁</a></li>
+                        <li><a href="#">19999元一台2小时订出10台 iPhoneX在杭州抢疯了</a></li>
+                        <li><a href="#">又一重要组织发声：反“港独”是中国人的基本底线</a></li>
+                        <li><a href="#"><b>安倍为印度推销新干线 德媒：或血本无归</b></a></li>
+                        <li><a href="#">快讯!马来西亚吉隆坡一所学校发生火灾 致约25人死</a></li>
+                        <li><a href="#">因中国游客减少，济州这列备受欢迎的“黄金巴士”将被下线</a></li>
+                        <li><a href="#">俄成功试射“亚尔斯”洲际导弹 专家: 可摧毁美5万人口以上城市</a></li>
+                        <li><a href="#">韩欲向WTO状告中国“反萨举措” 专家：其无法裁决民间抵制</a></li>
+                        <li><a href="#">英拉出逃细节：中途曾换车前往柬埔寨边境(图)</a></li>
+                        <li><a href="#"><b>陕西父子同校上大学：44岁父亲是新生 儿子成学长</b></a></li>
+                        <li><a href="#">女子国庆8天要参加6场婚礼 份子钱一月工资都不够</a></li>
+                        <li><a href="#">古墓发掘惊人文物：和现代器具一模一样 真有穿越？</a></li>
+                        <li><a href="#">5个团伙流窜9省盗挖古墓 因互相猜忌内部举报被抓</a></li>
+                        <li><a href="#">受创业者自杀事件影响 世纪佳缘母公司市值蒸发17亿</a></li>
+                        <li><a href="#">乘客坐16元专车喝2瓶水被骂 为啥网友都在挺司机</a>?</li>
+                        <li><a href="#"><b>僵持14年拿到6000万？ 上海“最牛钉子户”回应</b></a></li>
+                        <li><a href="#">女子先丢家里钥匙后丢现金 小偷是刚分手的前男友</a></li>
+                        <li><a href="#">男子坐公交连投2700元：钱箱放遗书 见人上车就投100</a></li>
+                        <li><a href="#">3人作案2人潜逃 警方称"将放人"同伙来接人时被抓</a></li>
+                        <li><a href="#">小伙手机放田边 引出成群小东西，简直脑洞大开</a></li>
+                        <li><a href="#">女子打的去机场被抛高速 滴滴：未付费无法投诉</a></li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile">...</div>
+            </div>
+        </div>
+
+        <div class='pull-right'>
+            <div id="carousel-example-generic" class="carousel slide new_car" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators new_rad">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="./images/8.jpg" alt="...">
+                        <div class="carousel-caption new_write">
+                            六王毕，四海一；蜀山兀，阿房出。
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./images/9.jpg" alt="...">
+                        <div class="carousel-caption new_write">
+                            覆压三百余里，隔离天日。
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./images/10.jpg" alt="...">
+                        <div class="carousel-caption new_write">
+                            骊山北构而西折，直走咸阳。
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./images/11.jpg" alt="...">
+                        <div class="carousel-caption new_write">
+                            二川溶溶，流入宫墙。五步一楼，十步一阁；
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./images/12.jpg" alt="...">
+                        <div class="carousel-caption new_write">
+                            廊腰缦回，檐牙高啄；各抱地势，钩心斗角。
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./images/13.jpg" alt="...">
+                        <div class="carousel-caption new_write">
+                            盘盘焉，囷囷焉，蜂房水涡，矗不知乎几千万落！
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./images/14.jpg" alt="...">
+                        <div class="carousel-caption new_write">
+                            长桥卧波，未云何龙？複道行空，不霁何虹？
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./images/15.jpg" alt="...">
+                        <div class="carousel-caption new_write">
+                            高低冥迷，不知西东。歌台暖响，春光融融；
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <p><a href="#">热搜新闻词</a><span>HOT WORDS</span></p>
+
+            <div class='box'>
+                <div class='new_top'>
+                    <div class='pull-left'><span></span><span></span><p>这步棋,习近平落子“公平正义”</p></div>
+                    <div class='pull-left'><span></span><span></span><p>习近平同普京向深圳北理莫斯科大学致贺辞</p></div>
+                    <div class='pull-left'><span></span><span></span><p>天舟一号完成交会对接试验</p></div>
+                    <div class='pull-left'><span></span><span></span><p>特朗普今秋将访问中国</p></div>
+                </div>
+                <div class='new_bottom'>
+                    <div class='pull-left'><span></span><span></span><p>美国将对亚非四国限制签证</p></div>
+                    <div class='pull-left'><span></span><span></span><p>盼盼原型传奇大熊猫去世</p></div>
+                    <div class='pull-left'><span></span><span></span><p>我国“抗震神器”问世</p></div>
+                    <div class='pull-left'><span></span><span></span><p>双台风结对来袭</p></div>
+                    <div class='pull-left'><span></span><span></span><p>藏獒经济崩盘</p></div>
+                    <div class='pull-left'><span></span><span></span><p>高原上万流浪狗“成灾”</p></div>
+                </div>
+            </div>
+
+            <div>
+                <div class='pull-left'>
+                    <a href="#">百家号</a><span>BAIJIA</span>
+                    <a href="#">财经</a>
+                    <a href="#">文化</a>
+                    <a href="#">娱乐</a>
+                    <a href="#">体育</a>
+                </div>
+                <div class='pull-right'>
+                    <a href="#">加入百家号</a><span></span>
+                </div>
+            </div>
+
+            <div class='join'>
+                <div class='new_img pull-left'>
+                    <div>
+                        <img src="./images/03.jpg" alt=""/>
+                    </div>
+                    <div class='pull-left'>
+                        <img src="./images/04.jpg" alt=""/>
+                        <p>
+                            贾跃亭的敦刻尔克：出国70天瓦解
+                        </p>
+                    </div>
+                   <div class='pull-left'>
+                       <img src="./images/05.jpg" alt="" class=''/>
+                       <p>
+                           当我们看苹果发布会时，到底在看什么？
+                       </p>
+                   </div>
+                </div>
+
+                <div>
+                    <ul>
+                        <li><a href="#"><b>从论文数量到专利申请，盘点中美 AI 的基础</b></a></li>
+                        <li><a href="#">小扎84万招中文保姆，是Facebook入华前奏？</a></li>
+                        <li><a href="#">消息坐实了？比特币将于9月底退出市场？</a></li>
+                        <li><a href="#">面向未来的选择：iPhone X的全新无触摸ID</a></li>
+                        <li><a href="#">微信支付入局AppStore，移动支付三方势力进</a></li>
+                        <li><a href="#"><b>国家版权局发声，为音乐版权树立开放机制产</b></a></li>
+                        <li><a href="#">杀向全球的共享单车，最后真能有所作为吗？</a></li>
+                        <li><a href="#">APP创业者自白：我养了一年多的“猪”死了</a></li>
+                        <li><a href="#">阿里腾讯的联手围攻之下，网易云音乐会因版</a></li>
+                        <li><a href="#">苹果大举押注AR,或将撬动整个行业？</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class='focus'>
+                <div class='pull-left'>
+                    <p>百家聚焦 <span>BAIJIA FOCUS</span></p>
+                    <img src="./images/23.jpg" alt=""/>
+                </div>
+                <div class="pull-right">
+                    <div class='pull-left'>热门文章 <span>BAIJIA HOT</span></div>
+                    <div class='pull-right'>
+                        <span>日榜</span>
+                        <span>周榜</span>
+                    </div>
+                    <ul class=''>
+                        <li>iPhone X被网友玩坏：</li>
+                        <li>iPhone终将走向平庸，但</li>
+                        <li>厉害了！iPhone X“刘</li>
+                        <li>为什么说苹果开放NFC之后</li>
+                        <li>贾跃亭的敦刻尔克：出国70天</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--悬浮窗-->
+    <div class='float' data-spy="affix">
+        <p><span class='pull-left'>网上有害信息举报</span><span class='glyphicon glyphicon-collapse-down'></span></p>
+        <div class='glyphicon glyphicon-qrcode'></div>
+        <div class='glyphicon glyphicon-star-empty'></div>
+        <div class='glyphicon glyphicon-eye-open'></div>
+        <div class='glyphicon glyphicon-search'></div>
+        <div class='glyphicon glyphicon-question-sign'></div>
+    </div>
+
+    <!--bootstrap是依赖与jquery这个库-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <!--bootstrap 核心js文件-->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script src='./js/news.js'></script>
+</body>
+</html>
